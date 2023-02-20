@@ -1,0 +1,39 @@
+---
+title: 'Welcome to P1!'
+from: '"John" <hello@example.com>'
+preheader: 'Thank you for joining.'
+images:
+  logo: 'images/logo.png'
+---
+
+<layout src="base.html">
+  <block name="template">
+    <table class="w-full font-sans">
+      <tr>
+        <td align="center" class="bg-white">
+          <table class="w-150 sm:w-full">
+            <component src="header.html"></component>
+            <tr>
+              <td align="center" class="sm:px-6">
+                <table class="w-full">
+                  <tr>
+                    <td
+                      class="p-12 sm:px-6 bg-slate-50 text-slate-700 text-base text-left leading-6 rounded shadow-sm"
+                    >
+                      <p>
+                        Thank you for joining.
+                      </p>
+                    </td>
+                  </tr>
+                  <tr role="separator">
+                    <td class="h-12"></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </block>
+</layout>
